@@ -18,6 +18,7 @@ class DoubleHashSet : ISet<T> {
 private:
     static const int SIZE = 1032943;
     static const int SEC_SIZE = 47737;
+    int a_size = 0;
     T table[SIZE] = {nullptr};
 
     int primary_hash(T key) {
@@ -34,13 +35,19 @@ public:
 
     void add(T item) override {
         int hash = primary_hash(item);
-        if (table[hash] == nullptr || table[hash] == item) {
+        if (table[hash] == nullptr) {
+            a_size++;
             table[hash] = item;
+        } else if (table[hash] == item) {
+            return;
         } else {
             for (int i = 1; i < SIZE; ++i) {
                 hash = secondary_hash(item, i);
-                if (table[hash] == nullptr || table[hash] == item) {
+                if (table[hash] == nullptr) {
+                    a_size++;
                     table[hash] = item;
+                    return;
+                } else if (table[hash] == item) {
                     return;
                 }
             }
@@ -50,11 +57,13 @@ public:
     void remove(T item) override {
         int hash = primary_hash(item);
         if (table[hash] == item) {
+            a_size--;
             table[hash] = nullptr;
         } else {
             for (int i = 1; i < SIZE; ++i) {
                 hash = secondary_hash(item, i);
                 if (table[hash] == item) {
+                    a_size--;
                     table[hash] = nullptr;
                     return;
                 }
@@ -78,8 +87,10 @@ public:
     }
 
     int size() override {
-        for (int i = 0; i < ; ++i) {
-            
-        }
+        return a_size;
+    }
+
+    bool isEmpty() override {
+        return a_size == 0;
     }
 };

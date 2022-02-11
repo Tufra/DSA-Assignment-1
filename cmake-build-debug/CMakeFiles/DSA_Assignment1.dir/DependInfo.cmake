@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/under/CLionProjects/DSA_Assignment1/main.cpp" "C:/Users/under/CLionProjects/DSA_Assignment1/cmake-build-debug/CMakeFiles/DSA_Assignment1.dir/main.cpp.obj"
-  "C:/Users/under/CLionProjects/DSA_Assignment1/queue.cpp" "C:/Users/under/CLionProjects/DSA_Assignment1/cmake-build-debug/CMakeFiles/DSA_Assignment1.dir/queue.cpp.obj"
-  "C:/Users/under/CLionProjects/DSA_Assignment1/set.cpp" "C:/Users/under/CLionProjects/DSA_Assignment1/cmake-build-debug/CMakeFiles/DSA_Assignment1.dir/set.cpp.obj"
-  "C:/Users/under/CLionProjects/DSA_Assignment1/stack.cpp" "C:/Users/under/CLionProjects/DSA_Assignment1/cmake-build-debug/CMakeFiles/DSA_Assignment1.dir/stack.cpp.obj"
+  "C:/Users/under/Documents/GitHub/dsa-ass1/main.cpp" "C:/Users/under/Documents/GitHub/dsa-ass1/cmake-build-debug/CMakeFiles/DSA_Assignment1.dir/main.cpp.obj"
+  "C:/Users/under/Documents/GitHub/dsa-ass1/queue.cpp" "C:/Users/under/Documents/GitHub/dsa-ass1/cmake-build-debug/CMakeFiles/DSA_Assignment1.dir/queue.cpp.obj"
+  "C:/Users/under/Documents/GitHub/dsa-ass1/set.cpp" "C:/Users/under/Documents/GitHub/dsa-ass1/cmake-build-debug/CMakeFiles/DSA_Assignment1.dir/set.cpp.obj"
+  "C:/Users/under/Documents/GitHub/dsa-ass1/stack.cpp" "C:/Users/under/Documents/GitHub/dsa-ass1/cmake-build-debug/CMakeFiles/DSA_Assignment1.dir/stack.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
